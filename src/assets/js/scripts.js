@@ -159,4 +159,10 @@
 	        }
 	    });
 	});
-	
+   
+   
+
+   var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.names = ["What is your nationality", "What is your father's middle name", "Linus"];
+});

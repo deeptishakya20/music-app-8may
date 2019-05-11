@@ -6,6 +6,8 @@ import { UserFavouritesListComponent } from './user-favourites-list/user-favouri
 import { UserSavedListComponent } from './user-savedlist/user-savelist.component';
 import { RouterModule } from '@angular/router';
 import { userRoutes } from './user.routes';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms'
+
 // import { ReactiveFormsModule} from '@angular/forms';
 
 
@@ -20,7 +22,9 @@ import { userRoutes } from './user.routes';
     imports:[
         BrowserModule,
         // ReactiveFormsModule,
-        RouterModule.forRoot(userRoutes)
+        RouterModule.forRoot(userRoutes),
+        FormsModule,
+        ReactiveFormsModule
     ],
     exports:[
         UserSignupComponent,
